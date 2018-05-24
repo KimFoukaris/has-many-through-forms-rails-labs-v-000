@@ -4,7 +4,7 @@ class Post < ActiveRecord::Base
   has_many :comments
   has_many :users, through: :comments
   accepts_nested_attributes_for :categories
-  
+
 
   #def user_attributes=(user_attributes)
   #    user_attributes.values.each do |user_attribute|
